@@ -54,7 +54,8 @@ public class Cal extends Applet implements ActionListener
     }
     public void actionPerformed(ActionEvent ae)
     {
-        String str=ae.getActionCommand(); char ch=str.charAt(0); if (
+        String str=ae.getActionCommand();
+        char ch=str.charAt(0); if (
             Character.isDigit(ch)) t1.setText(t1.getText()+str); else
     if(str.equals("add"))
     {
@@ -64,7 +65,8 @@ public class Cal extends Applet implements ActionListener
     }
     else if(str.equals("sub"))
     {
-        v1=Integer.parseInt(t1.getText()); OP='-';t1.setText("");
+        v1=Integer.parseInt(t1.getText());
+        OP='-';t1.setText("");
     } else if(str.equals("mul"))
     {
         v1=Integer.parseInt(t1.getText());
